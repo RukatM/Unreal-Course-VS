@@ -9,7 +9,15 @@ void Render();
 void ShutDown();
 
 int main() {
-	cout << "Elo Pomelo" << endl;
+	Initialize();
+
+	while (true) {
+		GetInput();
+		Update();
+		Render();
+	}
+
+	ShutDown();
 	return 0;
 }
 
